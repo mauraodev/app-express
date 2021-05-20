@@ -6,7 +6,7 @@
 
 var app = require('../app');
 var debug = require('debug')('myapp:server');
-var http = require('http');
+import http from 'http'
 require('dotenv').config()
 
 /**
