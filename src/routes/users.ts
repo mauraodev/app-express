@@ -2,10 +2,10 @@ import express from 'express'
 const router = express.Router()
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   const users = ['Mauro', 'Poli', 'Elena']
 
-  res.json(['Mauro', 'Poli', 'Elena', 'Melissa']);
-});
+  res.json(users)
+})
 
-module.exports = router;
+export default router
